@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/default.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/navigation.css" />
+    <link rel="stylesheet" href="./assets/css/media.css" />
+    <title>Pawan Awasthi</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="browser flex flex-column">
+        <div class="browser-control relative">
+          <div class="dots-container flex flex-space-around">
+            <div class="dots close" id="close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="dots minimize" id="minimize">
+              <i class="fa-solid fa-minimize"></i>
+            </div>
+            <div class="dots maximize" id="maximize">
+              <i class="fa-solid fa-maximize"></i>
+            </div>
+          </div>
+
+          <i class="fa-brands fa-chrome chrome-icon absolute"></i>
+        </div>
+        <hr class="relative" />
+        <div class="browser-search flex flex-space-between">
+          <div class="browser-navigation flex flex-space-between">
+            <i class="fa-solid fa-arrow-left back"></i>
+            <i class="fa-solid fa-rotate-right reload"></i>
+            <i class="fa-solid fa-house home"></i>
+          </div>
+          <input class="search" type="text" />
+          <div class="three-dots flex flex-space-between">
+            <i class="fa-solid fa-arrow-right go"></i>
+            <i class="fa-solid fa-list-ul menu"></i>
+          </div>
+        </div>
+        <div class="browser-page relative">
+          <div class="main-content relative">
+            <!-- PROJECT CARDS -->
+            <!-- SWIPER -->
+            <div class="relative components swiper mySwiper flex flex-column">
+              <div class="swiper-wrapper">
+                <a
+                  href="https://pawandai.github.io/formvalidator/"
+                  target="_blank"
+                  class="swiper-slide"
+                >
+                  <div class="swiper-slide flex flex-column flex-space-around">
+                    <div class="project-heading">Form Validation Project</div>
+                    <img src="./assets/images/project-1.png" />
+                    <div class="message">
+                      The project idea is taken from Traversy Media
+                    </div>
+                  </div>
+                </a>
+                <a
+                  href="https://pawandai.github.io/slidingform/"
+                  target="_blank"
+                  class="swiper-slide"
+                >
+                  <div class="swiper-slide flex flex-column flex-space-around">
+                    <div class="project-heading">
+                      Signin/Signup Form Project
+                    </div>
+                    <img src="./assets/images/project-2.png" />
+                    <div class="message">
+                      The project idea is taken from Florin Pop
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swipe-heading">Swipe for Next/Previous</div>
+            </div>
+
+            <!-- USER PROFILE -->
+            <!-- PROFILE -->
+            <div
+              class="components profile absolute flex flex-center flex-column active"
+            >
+              <div class="profile-pic-container">
+                <img class="profile-pic" src="./assets/images/pawan.jpeg" />
+              </div>
+              <div class="cards-wrapper flex flex-center">
+                <div class="card flex flex-center flex-column">
+                  <p class="center">
+                    Hi! My name is Pawan Awasthi. I am a Web Developer and Web
+                    Designer.
+                  </p>
+                  <div class="profile-icons flex flex-space-evenly spread">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NAVIGATION -->
+          <!-- Bottom Navigation Panel -->
+          <nav>
+            <div class="navigation flex flex-center relative">
+              <div class="nav flex flex-center" id="navigation">
+                <ul class="flex nav-list">
+                  <li
+                    class="nav-list-items flex flex-center flex-column relative"
+                  >
+                    <span class="icon active" id="profile"
+                      ><i class="fa-solid fa-user"></i
+                    ></span>
+                    <span class="text absolute">Profile</span>
+                  </li>
+                  <li
+                    class="nav-list-items flex flex-center flex-column relative"
+                  >
+                    <span class="icon" id="skills"
+                      ><i class="fa-solid fa-bolt-lightning"></i
+                    ></span>
+                    <span class="text absolute">Skills</span>
+                  </li>
+                  <li
+                    class="nav-list-items flex flex-center flex-column relative"
+                  >
+                    <span class="icon" id="projects"
+                      ><i class="fa-solid fa-diagram-project"></i
+                    ></span>
+                    <span class="text absolute">Projects</span>
+                  </li>
+                  <li
+                    class="nav-list-items flex flex-center flex-column relative"
+                  >
+                    <span class="icon" id="contact"
+                      ><i class="fa-solid fa-address-book"></i
+                    ></span>
+                    <span class="text absolute">Contact</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="selector absolute"></div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>

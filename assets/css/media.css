@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&family=Zen+Dots&display=swap');
+
+/* MAKING TOP RESPONSIVE */
+
+@media(max-width: 768px) {
+  .search {
+    width: 55vw;
+  }
+}
+
+@media(max-width: 635px) {
+  .search {
+    width: 40vw;
+  }
+}
+
+@media(max-width: 460px) {
+  .home,
+  .menu {
+    display: none;
+  }
+  .search {
+    width: 45vw;
+  }
+}
+
+@media(max-width: 440px) {
+  .swiper {
+    transform: scale(0.8);
+  }
+}
+
+@media(max-width: 385px) {
+  .swiper {
+    transform: scale(0.6);
+  }
+}
+
+@media(max-width: 335px) {
+  .reload {
+    display: none;
+  }
+}
+
+@media(max-width: 250px) {
+  .browser-search {
+    display: none;
+  }
+}
+
+@media(max-width: 210px) {
+  .chrome-icon {
+    display: none;
+  }
+
+  .dots-container {
+    width: 100%;
+  }
+}
+
+
+/* MAKING PROFILE CARD RESPONSIVE */
+
+@media(max-width: 752px) {
+  .card {
+    width: 70%;
+  }
+}
+
+@media(max-width: 554px) {
+  .profile-pic {
+    width: 200px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+@media(max-width: 400px) {
+  .profile-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    row-gap: 10px;
+  }
+}
+
+
+/* MAKING NAVIGATION BAR RESPONSIVE */
+
+@media(max-width: 470px) {
+  .nav-items {
+    width: 95vw;
+  }
+}
